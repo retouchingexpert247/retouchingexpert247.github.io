@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Professional Clothing Photo Editing Service for fashion brands, clothing stores, photographers and eCommerce businesses. Get clean, polished and high-quality clothing images.">
+
+  <meta name="keywords" content="clothing photo editing, clothing photo editing service, apparel photo editing, fashion photo editing, clothing image editing, eCommerce clothing photo editing">
+
+  <meta name="author" content="Retouching Expert">
+
+  <title>Clothing Photo Editing Service | Professional Apparel Image Editing</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+
+    /* HEADER */
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      font-weight: 400;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-menu a:hover {
+      opacity: .6;
+    }
+
+    .menu-button {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      background: #f7f7f7;
+      padding: 95px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #555;
+      margin-bottom: 30px;
+      max-width: 780px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      border: 1px solid #222;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      background: #222;
+      color: #fff;
+    }
+
+
+    /* SECTION */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+
+    /* INTRO */
+
+    .intro {
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+      color: #444;
+    }
+
+    .intro p {
+      margin-bottom: 18px;
+    }
+
+
+    /* SERVICES */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid #e5e5e5;
+      padding: 28px;
+      background: #fff;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+
+    /* BEFORE AFTER */
+
+    .before-after {
+      background: #f7f7f7;
+    }
+
+    .comparison-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .comparison-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .comparison-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .comparison-item h3 {
+      text-align: center;
+      padding: 15px 5px 5px;
+    }
+
+
+    /* WHY */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+
+    /* FREE TRIAL */
+
+    .trial {
+      background: #f7f7f7;
+    }
+
+    .trial-box {
+      max-width: 850px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border: 1px solid #ddd;
+    }
+
+    .trial-box form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .trial-box input,
+    .trial-box select,
+    .trial-box textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .trial-box textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .trial-box button {
+      padding: 15px;
+      border: none;
+      background: #222;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+
+    /* FAQ */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 22px 0;
+    }
+
+    .faq-item h3 {
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .faq-item p {
+      color: #666;
+    }
+
+
+    /* CTA */
+
+    .cta {
+      background: #222;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #ccc;
+      max-width: 700px;
+      margin: 15px auto 30px;
+    }
+
+    .cta .btn {
+      color: #fff;
+      border-color: #fff;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 45px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #333;
+      margin-top: 35px;
+      padding-top: 25px;
+      color: #777;
+      font-size: 13px;
+    }
+
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+    }
+
+
+    @media (max-width: 700px) {
+
+      .menu-button {
+        display: block;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 25px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .service-grid,
+      .comparison-box,
+      .why-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .trial-box {
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="index.html" class="logo">
+      RETOUCHING <span>EXPERT</span>
+    </a>
+
+    <div class="menu-button" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-menu" id="navMenu">
+
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="index.html#retouching">
+          Photo Retouching Service
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#editing">
+          Photo Editing Service
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#trial">
+          Free Trial
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#pricing">
+          Pricing
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html#contact">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-content">
+
+    <h1>
+      Clothing Photo Editing Service
+    </h1>
+
+    <p>
+      Professional clothing photo editing services for fashion brands,
+      clothing stores, photographers, eCommerce businesses and online
+      retailers. We create clean, polished and consistent apparel images
+      for professional presentation.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#trial" class="btn btn-primary">
+        Get a Free Sample
+      </a>
+
+      <a href="index.html#editing" class="btn">
+        All Photo Editing Services
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INTRODUCTION -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Professional Clothing Image Editing</h2>
+
+      <p>
+        High-quality editing solutions for clothing and apparel photography.
+      </p>
+
+    </div>
+
+    <div class="intro">
+
+      <p>
+        Professional clothing images are important for fashion brands,
+        eCommerce stores, catalogs and online retailers. Clean and
+        consistent product images help customers understand the style,
+        color and details of apparel products.
+      </p>
+
+      <p>
+        Our clothing photo editing service helps improve apparel images
+        with background cleanup, color correction, wrinkle reduction,
+        dust and spot removal, image enhancement and professional
+        retouching.
+      </p>
+
+      <p>
+        Whether you have a few clothing images or a large product catalog,
+        we can provide consistent editing across your complete image set.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CLOTHING EDITING SERVICES -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Clothing Photo Editing Services</h2>
+
+      <p>
+        Complete apparel image editing solutions for brands,
+        photographers and eCommerce businesses.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <div class="service-card">
+
+        <h3>Background Removal</h3>
+
+        <p>
+          Remove unwanted backgrounds and create clean product
+          presentations for clothing images.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Background Replacement</h3>
+
+        <p>
+          Replace existing backgrounds with clean and professional
+          backgrounds suitable for catalogs and online stores.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Clothing Color Correction</h3>
+
+        <p>
+          Correct clothing colors and maintain an accurate product
+          appearance across your image collection.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Wrinkle Removal</h3>
+
+        <p>
+          Reduce unwanted wrinkles and folds while keeping clothing
+          texture natural and realistic.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Dust &amp; Spot Removal</h3>
+
+        <p>
+          Remove dust, spots, marks and small imperfections from
+          clothing product images.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Image Enhancement</h3>
+
+        <p>
+          Improve brightness, contrast, sharpness and overall image
+          quality for professional presentation.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Shadow Creation</h3>
+
+        <p>
+          Create natural-looking shadows that add depth and improve
+          clothing product presentation.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Ghost Mannequin Editing</h3>
+
+        <p>
+          Create clean ghost mannequin effects for professional
+          apparel product photography.
+        </p>
+
+      </div>
+
+
+      <div class="service-card">
+
+        <h3>Clothing Retouching</h3>
+
+        <p>
+          Refine clothing details and create clean, polished images
+          suitable for eCommerce stores and catalogs.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BEFORE & AFTER -->
+
+<section class="before-after">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Clothing Photo Editing Before &amp; After</h2>
+
+      <p>
+        See the difference professional clothing image editing can make.
+      </p>
+
+    </div>
+
+
+    <div class="comparison-box">
+
+
+      <div class="comparison-item">
+
+        <img
+          src="clothing-before.jpg"
+          alt="Clothing Photo Editing Before"
+          style="max-width:100%;height:auto;display:block;"
+        >
+
+        <h3>Clothing Photo — Before</h3>
+
+      </div>
+
+
+      <div class="comparison-item">
+
+        <img
+          src="clothing-after.jpg"
+          alt="Clothing Photo Editing After"
+          style="max-width:100%;height:auto;display:block;"
+        >
+
+        <h3>Clothing Photo — After</h3>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Why Choose Retouching Expert?</h2>
+
+      <p>
+        Professional clothing photo editing focused on quality,
+        consistency and reliable results.
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <h3>Professional Quality</h3>
+
+        <p>
+          Clean and detailed editing for fashion brands,
+          photographers and eCommerce businesses.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <h3>Consistent Results</h3>
+
+        <p>
+          Maintain consistent colors, backgrounds and presentation
+          across complete clothing catalogs.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <h3>Fast Turnaround</h3>
+
+        <p>
+          Efficient workflow for both small projects and
+          large clothing image collections.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <h3>Free Sample</h3>
+
+        <p>
+          Send us your clothing image and review our editing quality
+          before starting your project.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FREE SAMPLE -->
+
+<section id="trial" class="trial">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Get a Free Clothing Photo Editing Sample</h2>
+
+      <p>
+        Send us your clothing image and editing requirements.
+        We will prepare a sample for you to review.
+      </p>
+
+    </div>
+
+
+    <div class="trial-box">
+
+      <form>
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+        >
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          required
+        >
+
+        <input
+          type="text"
+          placeholder="Company / Website"
+        >
+
+        <select required>
+
+          <option value="">
+            Select Service
+          </option>
+
+          <option>
+            Clothing Photo Editing
+          </option>
+
+          <option>
+            Background Removal
+          </option>
+
+          <option>
+            Clothing Color Correction
+          </option>
+
+          <option>
+            Ghost Mannequin
+          </option>
+
+          <option>
+            Other
+          </option>
+
+        </select>
+
+
+        <input
+          type="file"
+          accept="image/*"
+        >
+
+
+        <textarea
+          placeholder="Tell us about your clothing photo editing requirements"
+        ></textarea>
+
+
+        <button type="submit">
+          Submit Free Sample Request
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Common questions about our clothing photo editing service.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <div class="faq-item">
+
+        <h3>
+          What is clothing photo editing?
+        </h3>
+
+        <p>
+          Clothing photo editing is the professional enhancement of
+          apparel images through background cleanup, color correction,
+          wrinkle reduction, retouching and image enhancement.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Can you edit clothing images for eCommerce stores?
+        </h3>
+
+        <p>
+          Yes. We provide clothing image editing for eCommerce stores,
+          fashion brands, online retailers, catalogs and professional
+          photographers.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Can you maintain consistent editing across a catalog?
+        </h3>
+
+        <p>
+          Yes. We can maintain consistent backgrounds, colors,
+          lighting and overall presentation across large collections.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          Do you provide a free sample?
+        </h3>
+
+        <p>
+          Yes. You can send a clothing image and your requirements
+          through our free sample section.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>
+          How can I start a clothing photo editing project?
+        </h3>
+
+        <p>
+          Send us your clothing images and editing requirements.
+          We can review your project and discuss the appropriate
+          editing workflow.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>
+      Need Professional Clothing Photo Editing?
+    </h2>
+
+    <p>
+      Send us your clothing images and experience our professional
+      editing quality with a free sample.
+    </p>
+
+    <a href="#trial" class="btn">
+      Start Your Free Sample
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <h3>
+          Retouching Expert
+        </h3>
+
+        <p>
+          Professional photo retouching and photo editing services
+          for photographers, businesses, studios and eCommerce
+          professionals.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Photo Editing
+        </h3>
+
+        <ul>
+
+          <li>Clothing Photo Editing</li>
+
+          <li>Shoes Photo Editing</li>
+
+          <li>Clipping Path</li>
+
+          <li>Ghost Mannequin</li>
+
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <ul>
+
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#editing">
+              Photo Editing Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#trial">
+              Free Sample
+            </a>
+          </li>
+
+          <li>
+            <a href="index.html#contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Retouching Expert. All Rights Reserved.
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  function toggleMenu() {
+
+    const menu = document.getElementById("navMenu");
+
+    menu.classList.toggle("active");
+
+  }
+
+</script>
+
+
+</body>
+
+</html>
