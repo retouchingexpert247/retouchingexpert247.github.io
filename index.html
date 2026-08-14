@@ -67,12 +67,18 @@
       gap: 20px;
     }
 
-    .logo {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
     .logo span {
       font-weight: 400;
@@ -602,9 +608,9 @@
   <header>
     <div class="container navbar">
 
-      <a href="#" class="logo">
-        RETOUCHING <span>EXPERT</span>
-      </a>
+<a href="#" class="logo">
+  <img src="logo.png" alt="Retouching Expert">
+</a>
 
       <div class="menu-button" onclick="toggleMenu()">☰</div>
 
