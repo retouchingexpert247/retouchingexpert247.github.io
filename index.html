@@ -1096,38 +1096,77 @@
 
       <div class="trial-box">
 
-        <form>
+<div class="trial-box">
 
-          <input type="text" placeholder="Full Name" required>
+  <form id="trialForm">
 
-          <input type="email" placeholder="Email Address" required>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Full Name"
+      required
+    >
 
-          <input type="text" placeholder="Company / Website">
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Email Address"
+      required
+    >
 
-          <select required>
+    <input
+      type="text"
+      id="company"
+      name="company"
+      placeholder="Company / Website"
+    >
 
-            <option value="">Select Service</option>
+    <select
+      id="service"
+      name="service"
+      required
+    >
 
-            <option>Photo Retouching</option>
-            <option>Photo Editing</option>
-            <option>Real Estate Photo Editing</option>
-            <option>Product Photo Editing</option>
-            <option>Newborn Photo Retouching</option>
-            <option>Maternity Photo Retouching</option>
-            <option>Jewelry Photo Editing</option>
-            <option>Other</option>
+      <option value="">Select Service</option>
 
-          </select>
+      <option>Photo Retouching</option>
+      <option>Photo Editing</option>
+      <option>Real Estate Photo Editing</option>
+      <option>Product Photo Editing</option>
+      <option>Newborn Photo Retouching</option>
+      <option>Maternity Photo Retouching</option>
+      <option>Jewelry Photo Editing</option>
+      <option>Other</option>
 
-          <input type="file">
+    </select>
 
-          <textarea placeholder="Tell us about your editing requirements"></textarea>
+    <input
+      type="file"
+      id="sampleFile"
+      name="sampleFile"
+      accept="image/*"
+      required
+    >
+  id="sampleFile"
+  name="sampleFile"
+  accept="image/*"
+  required
+>
 
-          <button type="submit">
-            Submit Free Trial Request
-          </button>
+<textarea
+  id="requirements"
+  name="requirements"
+  placeholder="Tell us about your editing requirements"
+  required
+></textarea>
 
-        </form>
+<button type="submit">
+  Submit Free Trial Request
+</button>
+
+</form>
 
       </div>
 
@@ -1298,6 +1337,85 @@
     }
 
   </script>
+<script>
+document.getElementById("trialForm").addEventListener("submit", async function(e) {
 
+  e.preventDefault();
+
+  const form = this;
+  const button = form.querySelector("button[type='submit']");
+  const file = document.getElementById("sampleFile").files[0];
+
+  if (!file) {
+    alert("Please upload an image.");
+    return;
+  }
+
+  if (file.size > 10 * 1024 * 1024) {
+    alert("Please upload an image smaller than 10MB.");
+    return;
+  }
+
+  button.disabled = true;
+  button.innerText = "Submitting...";
+
+  const reader = new FileReader();
+
+  reader.onload = async function() {
+
+    const base64 = reader.result.split(",")[1];
+
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      company: document.getElementById("company").value,
+      service: document.getElementById("service").value,
+      requirements: document.getElementById("requirements").value,
+      fileName: file.name,
+      fileType: file.type,
+      fileData: base64
+    };
+
+    try {
+      
+        const response = await fetch(
+  "https://script.google.com/macros/s/AKfycbzodouY-S2XaE3iMFPB0DtMZLexHHxDlW4Y_2kfBLZhRhBNiW6cKiIPxDkodpM4bSuowg/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(data)
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+
+        alert("Thank you! Your Free Trial Request has been submitted successfully.");
+
+        form.reset();
+
+      } else {
+
+        alert("Something went wrong. Please try again.");
+
+      }
+
+    } catch (error) {
+
+      alert("Unable to submit your request. Please try again.");
+
+      console.error(error);
+
+    }
+
+    button.disabled = false;
+    button.innerText = "Submit Free Trial Request";
+
+  };
+
+  reader.readAsDataURL(file);
+
+});
+</script>
 </body>
 </html>
