@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Retouching Expert provides professional photo retouching and photo editing services for photographers, studios, eCommerce businesses and professionals.">
+
+  <meta name="keywords" content="photo retouching service, photo editing service, professional photo editing, image retouching, product photo editing, real estate photo editing">
+
+  <meta name="author" content="Retouching Expert">
+
+  <title>Professional Photo Retouching & Photo Editing Service | Retouching Expert</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      font-weight: 400;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .nav-menu a:hover {
+      opacity: 0.6;
+    }
+
+    .menu-button {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 100px 0;
+      background: #f7f7f7;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #555;
+      max-width: 750px;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      border: 1px solid #222;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #222;
+      color: #fff;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SECTION */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: #666;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* SERVICES */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .service-card {
+      border: 1px solid #e5e5e5;
+      padding: 30px;
+      background: #fff;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #666;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    /* BEFORE AFTER */
+
+    .before-after {
+      background: #f7f7f7;
+    }
+
+    .comparison-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .comparison-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .comparison-item img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      background: #eeeeee;
+    }
+
+    .comparison-item h3 {
+      padding: 15px 5px 5px;
+      text-align: center;
+    }
+
+    /* WHY US */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .why-card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* FREE TRIAL */
+
+    .trial {
+      background: #f7f7f7;
+    }
+
+    .trial-box {
+      max-width: 850px;
+      margin: auto;
+      background: #fff;
+      padding: 45px;
+      border: 1px solid #ddd;
+    }
+
+    .trial-box form {
+      display: grid;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .trial-box input,
+    .trial-box select,
+    .trial-box textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    .trial-box textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .trial-box button {
+      padding: 15px;
+      border: none;
+      background: #222;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* CTA */
+
+    .cta {
+      text-align: center;
+      background: #222;
+      color: #fff;
+    }
+
+    .cta p {
+      color: #ccc;
+      max-width: 650px;
+      margin: 15px auto 30px;
+    }
+
+    .cta .btn {
+      border-color: #fff;
+      color: #fff;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 45px 0;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #333;
+      margin-top: 35px;
+      padding-top: 25px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .nav-menu {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .menu-button {
+        display: block;
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 25px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .service-grid,
+      .comparison-box,
+      .why-grid,
+      .footer-content {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .trial-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#" class="logo">
+        RETOUCHING <span>EXPERT</span>
+      </a>
+
+      <div class="menu-button" onclick="toggleMenu()">☰</div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#retouching">Photo Retouching Service</a></li>
+        <li><a href="#editing">Photo Editing Service</a></li>
+        <li><a href="#trial">Free Trial</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="container hero-content">
+
+      <h1>
+        Professional Photo Retouching & Photo Editing Services
+      </h1>
+
+      <p>
+        High-quality photo editing and retouching services for photographers,
+        studios, eCommerce businesses, real estate professionals and creative
+        agencies.
+      </p>
+
+      <div class="buttons">
+
+        <a href="#trial" class="btn btn-primary">
+          Get a Free Trial
+        </a>
+
+        <a href="#retouching" class="btn">
+          Explore Services
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHOTO RETOUCHING SERVICES -->
+
+  <section id="retouching">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Photo Retouching Services</h2>
+
+        <p>
+          Professional retouching solutions designed to create clean,
+          natural and polished images.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <h3>Real Estate Photo Retouching</h3>
+          <p>
+            Professional property photo enhancement, lighting correction,
+            sky replacement and natural image improvement.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Portrait Retouching</h3>
+          <p>
+            Natural skin retouching, color correction and professional
+            portrait enhancement.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Headshot Retouching</h3>
+          <p>
+            Professional headshot enhancement for business professionals,
+            actors and corporate clients.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Newborn Photo Retouching</h3>
+          <p>
+            Gentle and natural newborn image retouching for professional
+            photographers.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Maternity Photo Retouching</h3>
+          <p>
+            Elegant maternity image enhancement with natural skin and
+            professional finishing.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Wedding Photo Retouching</h3>
+          <p>
+            Professional wedding image retouching, color enhancement and
+            detailed finishing.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Fashion Photo Retouching</h3>
+          <p>
+            High-end fashion retouching for models, campaigns and editorial
+            photography.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Jewelry Photo Retouching</h3>
+          <p>
+            Detailed jewelry retouching, cleaning, color correction and
+            professional product enhancement.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Product Photo Retouching</h3>
+          <p>
+            Clean and professional product image retouching for eCommerce
+            businesses and photographers.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Beauty Photo Retouching</h3>
+          <p>
+            Professional beauty retouching with natural skin refinement and
+            high-end image finishing.
+          </p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PHOTO EDITING SERVICES -->
+
+  <section id="editing" class="before-after">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Photo Editing Services</h2>
+
+        <p>
+          Complete photo editing solutions for photographers, eCommerce
+          businesses and professional image creators.
+        </p>
+
+      </div>
+
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <h3>Background Removal</h3>
+          <p>Clean and accurate background removal for professional images.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Background Replacement</h3>
+          <p>Professional background replacement for creative and commercial images.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Clipping Path</h3>
+          <p>Precise clipping path services for products and commercial photography.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Image Masking</h3>
+          <p>Professional image masking for complex objects, hair and products.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Ghost Mannequin</h3>
+          <p>Professional ghost mannequin editing for fashion and apparel products.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Product Photo Editing</h3>
+          <p>Professional product image editing for online stores and eCommerce.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Real Estate Photo Editing</h3>
+          <p>Professional property image enhancement for real estate professionals.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Color Correction</h3>
+          <p>Accurate color correction and image balancing for consistent results.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Image Enhancement</h3>
+          <p>Professional image enhancement for cleaner and more polished results.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Photo Manipulation</h3>
+          <p>Creative and professional photo manipulation for commercial projects.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Shadow Creation</h3>
+          <p>Natural shadows created for products and commercial photography.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Object Removal</h3>
+          <p>Remove unwanted objects and distractions from your photographs.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Image Restoration</h3>
+          <p>Restore old, damaged and faded photographs with professional editing.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Jewelry Photo Editing</h3>
+          <p>Detailed jewelry editing for professional eCommerce presentation.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Amazon Product Editing</h3>
+          <p>Professional product image editing for Amazon sellers and brands.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Shopify Product Editing</h3>
+          <p>High-quality product image editing for Shopify stores and businesses.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Wedding Photo Editing</h3>
+          <p>Professional wedding photo editing with consistent color and finishing.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+        <div class="service-card">
+          <h3>High-End Photo Editing</h3>
+          <p>Detailed professional editing for premium commercial and creative images.</p>
+          <a href="#" class="service-link">View Service →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BEFORE AFTER -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Before & After</h2>
+
+        <p>
+          See the difference professional photo editing can make.
+        </p>
+
+      </div>
+
+      <div class="comparison-box">
+
+        <div class="comparison-item">
+
+          <div style="height:350px;background:#eeeeee;display:flex;align-items:center;justify-content:center;">
+            <span>YOUR BEFORE IMAGE</span>
+          </div>
+
+          <h3>Before</h3>
+
+        </div>
+
+
+        <div class="comparison-item">
+
+          <div style="height:350px;background:#eeeeee;display:flex;align-items:center;justify-content:center;">
+            <span>YOUR AFTER IMAGE</span>
+          </div>
+
+          <h3>After</h3>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Why Choose Retouching Expert?</h2>
+
+        <p>
+          Reliable professional photo editing support for photographers,
+          businesses and creative professionals.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <h3>Professional Quality</h3>
+          <p>Detailed and consistent image editing by experienced editors.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Fast Turnaround</h3>
+          <p>Efficient workflow designed for fast project delivery.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Free Trial</h3>
+          <p>Send us your image and experience our editing quality.</p>
+        </div>
+
+        <div class="why-card">
+          <h3>Reliable Support</h3>
+          <p>Professional support throughout your project.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FREE TRIAL -->
+
+  <section id="trial" class="trial">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Get Your Free Trial</h2>
+
+        <p>
+          Send us your image and editing requirements. We will prepare a
+          sample so you can review our quality before starting your project.
+        </p>
+
+      </div>
+
+
+      <div class="trial-box">
+
+        <form>
+
+          <input type="text" placeholder="Full Name" required>
+
+          <input type="email" placeholder="Email Address" required>
+
+          <input type="text" placeholder="Company / Website">
+
+          <select required>
+
+            <option value="">Select Service</option>
+
+            <option>Photo Retouching</option>
+            <option>Photo Editing</option>
+            <option>Real Estate Photo Editing</option>
+            <option>Product Photo Editing</option>
+            <option>Newborn Photo Retouching</option>
+            <option>Maternity Photo Retouching</option>
+            <option>Jewelry Photo Editing</option>
+            <option>Other</option>
+
+          </select>
+
+          <input type="file">
+
+          <textarea placeholder="Tell us about your editing requirements"></textarea>
+
+          <button type="submit">
+            Submit Free Trial Request
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRICING -->
+
+  <section id="pricing">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Flexible Pricing</h2>
+
+        <p>
+          Competitive pricing based on your image editing requirements,
+          complexity and project volume.
+        </p>
+
+      </div>
+
+
+      <div style="text-align:center;">
+
+        <a href="#contact" class="btn btn-primary">
+          Request a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>Ready to Improve Your Images?</h2>
+
+      <p>
+        Send us your photos and requirements. Get a professional sample edit
+        and discover how our photo editing team can support your workflow.
+      </p>
+
+      <a href="#trial" class="btn">
+        Start Your Free Trial
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Contact Us</h2>
+
+        <p>
+          Have a project in mind? Contact our photo editing team today.
+        </p>
+
+      </div>
+
+
+      <div style="text-align:center;">
+
+        <p><strong>Email:</strong> Your Email Address</p>
+
+        <p style="margin-top:10px;">
+          <strong>Business:</strong> Retouching Expert
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-content">
+
+        <div>
+
+          <h3>Retouching Expert</h3>
+
+          <p>
+            Professional photo retouching and photo editing services for
+            photographers, businesses, studios and eCommerce professionals.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>Services</h3>
+
+          <ul>
+
+            <li>Photo Retouching</li>
+            <li>Photo Editing</li>
+            <li>Product Editing</li>
+            <li>Real Estate Editing</li>
+            <li>Background Removal</li>
+
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h3>Quick Links</h3>
+
+          <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#trial">Free Trial</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="copyright">
+
+        © 2026 Retouching Expert. All Rights Reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+
+    function toggleMenu() {
+
+      const menu = document.getElementById("navMenu");
+
+      menu.classList.toggle("active");
+
+    }
+
+  </script>
+
+</body>
+</html>
