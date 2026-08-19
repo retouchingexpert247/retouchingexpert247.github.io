@@ -179,11 +179,78 @@
 
     /* SERVICES */
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.service-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.service-card{
+background:#fff;
+border:1px solid #e8e8e8;
+border-radius:14px;
+overflow:hidden;
+padding:0;
+text-align:center;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+transition:0.3s ease;
+}
+
+.service-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 30px rgba(0,0,0,0.14);
+}
+
+.service-card-image{
+width:100%;
+height:210px;
+object-fit:cover;
+}
+
+.service-card-content{
+padding:30px 22px 25px;
+}
+
+.service-card h3{
+font-size:20px;
+margin-bottom:12px;
+color:#172a4d;
+}
+
+.service-card p{
+font-size:14px;
+color:#687386;
+line-height:1.7;
+min-height:72px;
+margin-bottom:20px;
+}
+
+.service-card .service-link{
+display:inline-block;
+padding:11px 24px;
+border-radius:7px;
+background:#3f75e8;
+color:#fff;
+font-size:14px;
+font-weight:700;
+transition:0.3s;
+}
+
+.service-card .service-link:hover{
+background:#245bc8;
+}
+
+@media(max-width:900px){
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.service-grid{
+grid-template-columns:1fr;
+}
+}
 
     .service-card {
       border: 1px solid #e5e5e5;
@@ -679,16 +746,30 @@
       </div>
 
 
-      <div class="service-grid">
+<div class="service-card">
 
-        <div class="service-card">
-          <h3>Real Estate Photo Retouching</h3>
-          <p>
-            Professional property photo enhancement, lighting correction,
-            sky replacement and natural image improvement.
-          </p>
-          <a href="real-estate-photo-retouching.html" class="service-link">View Service →</a>
-        </div>
+<img 
+src="real-estate-card.jpg"
+alt="Real Estate Photo Retouching"
+class="service-card-image"
+>
+
+<div class="service-card-content">
+
+<h3>Real Estate Photo Retouching</h3>
+
+<p>
+Professional property photo enhancement, lighting correction,
+sky replacement and natural image improvement.
+</p>
+
+<a href="real-estate-photo-retouching.html" class="service-link">
+View Service →
+</a>
+
+</div>
+
+</div>
 
         <div class="service-card">
           <h3>Portrait Retouching</h3>
